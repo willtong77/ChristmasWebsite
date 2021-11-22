@@ -1,9 +1,7 @@
-// import Image from "./Image.js";
 import StaticImages from "./Image/StaticImages.js"
 import DynamicImage from "./Image/DynamicImage.js";
 import { imageList } from "./Image/imageList.js"
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 
 export default function App() {
@@ -21,7 +19,12 @@ export default function App() {
       <Helmet><style>{'body { background-color: lightblue; }'}</style></Helmet>
       <StaticImages/>
       <DynamicImage
-        click={handleClick}
+        // click={handleClick}
+        click = { () => {
+            setIndex(index < imageList.length - 1 ? index + 1 : 1);
+            setMessage("");
+        }}
+
         icon={image}
       />
 
