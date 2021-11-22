@@ -29,7 +29,7 @@ export default function App() {
         color:'red',
         textAlign:'center',
         verticalAlign:'center',
-        marginTop:600
+        marginTop:700
       }}>{message}</h1>
     </div>
   );

@@ -7,7 +7,7 @@ export default function StaticImages() {
     width: 700,
     height: 200,
     top: '0%',
-    left: '27.5%'
+    left: '29%'
   }
   let santa_claus=
   {
